@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/44cc35e8a2.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+        <nav>
+            <img src="images/logo.png" class ="logo">
+           
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portflio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <!--
+                <i class="fa-sharp fa-solid fa-xmark" onclick="closemenu()"></i>
+                -->
+            </ul>
+            
+    <!--
+         <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+         background-image: url(images/bg.jpg);
+    background-repeat: no-repeat;
+    background-position:center right;
+    background-size: 450px;
+    background-position-y: top;
+
+   
+    -->
+        </nav>
+        <div class="header-text">
+        <div class="text">
+            <p>WEB DEVELOPER</p>
+            <h1>Hi, I'm <span class="input"></span> </h1>
+
+        </div>
+        
+        <!-- <div class="head-img">
+            <img src="images/nba.png" alt="">
+        </div> -->
+
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class ="about-col-1">
+                    <img src="images/nav.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    A young web Developer who has a striving heart to learn new technologies.
+                    Interested in many fields,started with web development as basics.Want to excel in this field,So I 
+                    starte to create my own portfolio.
+                    Hope to achieve great.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="openntab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skillls">
+                    <ul>
+                        <li><span> WEB DEVELOPMENT</span><br>Developed a Website</li>
+                        <li><span>APP DEVELOPMENT</span><br>Learning Fundamentals of App Development</li>
+                        <li><span>ARTFICIAL INTELLIGENCE</span><br>Learning Artificial Intelligence</li>
+
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>WEB DEVLOPMENT</span><br>Developed a Personal Portfolio Website</li>
+                        <li><span>APP DEVELOPMENT</span><br>Created a login page using flutter</li>
+                        <li><span>ARTFICIAL INTELLIGENCE</span><br>Learning Tensorflow to train and test a model</li>
+
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>BACHELOR OF ENGINEERING</span><br>Pursuing bachelor of engineering in Computer Science Stream</li>
+                        <li><span>12th STANDARD</span><br>Completed Higher Secondary Education with 97 Percentage</li>
+                        <li><span>10th STANDARD</span><br>Completed Secondary Education with 96.4 Percentage</li>
+
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">    
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Designed a website for student management and created aportfolio</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>App Development</h2>
+                    <p>Designed a Login page for my application</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Content Creation</h2>
+                    <p>Created Content for youtube channel</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Student Connect Website</h3>
+                        <p>The website shows the basic details of student like assessment marks, profile,attendance,announcements etc.
+                        </p>
+                        <a href="https://github.com/Navi-2004/Student-Connect.git"><i class="fa-solid fa-up-right-from-square"></i></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/pp.avif">
+                    <div class="layer">
+                        <h3>Personal Portfolio App</h3>
+                        <p>Personal Portfolio contains my basic information
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/bg2.jpg">
+                    <div class="layer">
+                        <h3>Employee Management Website</h3>
+                        <p>
+                            This website manages the employee details in a database.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/youtube.jpeg">
+                    <div class="layer">
+                        <h3>Youtube Cloning Website</h3>
+                        <p>The website shows the basic frontend of the youtube website with working functionalities.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/30.png">
+                    <div class="layer">
+                        <h3>30 Before 30 Blog</h3>
+                        <p>30 Before 30 Blog contains information of my 30 Before 30 Bucket list with review system.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/moviie.png">
+                    <div class="layer">
+                        <h3>MoviesHunt</h3>
+                        <p>
+                            This website is for my personal use where I can add and delete my top 5 movie choices.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+    <div class="extra">
+        <h1 class="he1">My Skills</h1>
+    <div class="skills">
+        
+        <div class="skill">
+            
+            <li><h3>HTML</h3>
+            <span class="bar"><span class="html"></span></span>
+            </li>
+            <li><h3>CSS</h3>
+                <span class="bar"><span class="css"></span></span>
+                </li>
+                <li><h3>Javascript</h3>
+                    <span class="bar"><span class="javascript"></span></span>
+                    </li>
+                    <li><h3>React JS</h3>
+                        <span class="bar"><span class="react"></span></span>
+                        </li>
+                        <li><h3>Python</h3>
+                            <span class="bar"><span class="python"></span></span>
+                            </li>
+                            <li><h3>C</h3>
+                                <span class="bar"><span class="c"></span></span>
+                                </li>
+        </div>
+        <div class="progress">
+        <div class="wrapper">
+            <div class="card">
+              <div class="circle">
+                <div class="bar"></div>
+                <div class="box"><span></span></div>
+              </div>
+              <div class="text">Web Development</div>
+            </div>
+            <div class="card js">
+              <div class="circle">
+                <div class="bar"></div>
+                <div class="box"><span></span></div>
+              </div>
+              <div class="text">Programming</div>
+            </div>
+            <div class="card react">
+              <div class="circle">
+                <div class="bar"></div>
+                <div class="box"><span></span></div>
+              </div>
+              <div class="text">Leadership</div>
+            </div>
+          </div>
+          </div>
+          </div>
+          <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Achievements</h1>
+                <div class="services-list">    
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Runner Up</h2>
+                        <p>Runner up in a Intracollege level Hackathon </p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-crop-simple"></i>
+                        <h2>Skillrack</h2>
+                        <p>Solved 1700+ problems in Skillrack</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-app-store"></i>
+                        <h2>Codechef</h2>
+                        <p>Solved 300+ problems in Codechef</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div id="contact">
+        <div class="comtainer">
+            <h1 class="sub-title head">Contact Me</h1>
+            <div class="row">
+                <div class="contact-left">
+                    
+                    <p><i class="fa-solid fa-paper-plane"></i>navisenthilnadhan@gmail.com</p>
+                    <p><i class="fa-sharp fa-solid fa-mobile"></i>8667338331</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-git"></i></a>
+                    </div>
+                    <a href="images/Naviresume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+
+                        </form>
+                        <span id="msg"> </span>
+                    </div>
+
+
+                
+            </div>
+        </div>
+        
+    </div>
+    
+   
+   
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname)
+        {
+            for(tablink of tablinks)
+            {
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents)
+            {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwc3C0I_ZGLzm3Di1luFdK9RPJ_bSpZGACj7RK5jByr4ju-CQWW8WP6SRRxOx2LDCEU/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg=document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML="Message Sent Successfully"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+      
+    <script type="text/javascript" src="js/script.js"></script>
+        <script src="https://unpkg.com/typed.js@2.0.14/dist/typed.umd.js"></script>
+        <script>
+    var typed=new Typed(".input",{
+        strings:["Navi.","Web Developer.","UI Designer.","Programmer.","AI Enthusiast.","Android Developer"],
+        typeSpeed:90,
+        backSpeed:90,
+        loop:true,
+    });
+    </script>
+    <script>
+        let options = {
+          startAngle: -1.55,
+          size: 150,
+          value: 0.85,
+          fill: {gradient: ['#a445b2', '#fa4299']}
+        }
+        $(".circle .bar").circleProgress(options).on('circle-animation-progress',
+        function(event, progress, stepValue){
+          $(this).parent().find("span").text(String(stepValue.toFixed(2).substr(2)) + "%");
+        });
+        $(".js .bar").circleProgress({
+          value: 0.70
+        });
+        $(".react .bar").circleProgress({
+          value: 0.60
+        });
+      </script>
+  
+
+
+</body>
+</html>
